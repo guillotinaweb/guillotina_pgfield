@@ -20,7 +20,9 @@ test_requirements = load_reqs("requirements-test.txt")
 setup(
     name="guillotina_pgfield",
     version=open("VERSION").read().strip(),
-    long_description=(open("README.rst").read() + "\n" + open("CHANGELOG.rst").read()),
+    description="Postgres field support for Guillotina",
+    long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
     classifiers=[
         "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3.7",
