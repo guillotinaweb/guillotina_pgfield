@@ -1,4 +1,7 @@
-1.0.0
------
+CHANGELOG
+=========
 
-- Initial release [bloodbare]
+1.0.0 (unreleased)
+--------------------
+
+- Initial commit [bloodbare]
