@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.0.1 (unreleased)
+1.0.1 (2020-01-20)
 ------------------
 
 - Nothing changed yet.
