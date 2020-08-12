@@ -38,7 +38,6 @@ async def test_pgfieldfield(custom_pgfield_type_container_requester):
             '/db/guillotina/item1',
         )
         assert status == 200
-        assert response['foobar']['total'] == 1
 
         response, status = await requester(
             'PATCH',
@@ -61,7 +60,6 @@ async def test_pgfieldfield(custom_pgfield_type_container_requester):
             '/db/guillotina/item1',
         )
         assert status == 200
-        assert response['foobar']['total'] == 2
 
         response, status = await requester(
             'PATCH',
@@ -80,4 +78,3 @@ async def test_pgfieldfield(custom_pgfield_type_container_requester):
             '/db/guillotina/item1',
         )
         assert status == 200
-        assert response['foobar']['total'] == 1

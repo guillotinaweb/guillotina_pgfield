@@ -4,7 +4,6 @@ from guillotina_pgfield.interfaces import IPGFieldUtility
 import logging
 from guillotina.exceptions import Unauthorized
 import json
-import ujson
 import asyncpgsa
 import asyncio
 import contextvars
@@ -36,7 +35,7 @@ class PGFieldUtility(object):
         self._schemas = {}
 
     async def initialize(self, app):
-        dialect = get_dialect(json_serializer=json.dumps, json_deserializer=ujson.loads)
+        dialect = get_dialect(json_serializer=json.dumps, json_deserializer=json.loads)
 
         if "dsn" not in self.db_config:
             return
