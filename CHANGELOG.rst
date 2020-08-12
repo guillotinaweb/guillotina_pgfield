@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-2.0.0 (unreleased)
+2.0.0 (2020-08-12)
 ------------------
 
 - Refactor for not storing value pickle and code oriented aproach [bloodbare]
