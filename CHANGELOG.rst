@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-2.0.1 (unreleased)
+2.0.1 (2020-09-22)
 ------------------
 
 - Not reuse columns on get_table so can be reused
