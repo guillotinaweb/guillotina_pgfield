@@ -93,6 +93,8 @@ class PGFieldUtility(object):
     def get_table(self, table_name, db_schema):
         if table_name in self._schemas:
             return self._schemas[table_name]
+        
+        copied_schema = [x.copy() for x in db_schema]
 
         metadata = MetaData()
         pgfield_table = Table(
@@ -100,7 +102,7 @@ class PGFieldUtility(object):
             metadata,
             Column("zoid", String, index=True),
             Column("ts", DateTime(timezone=True), index=True),
-            *db_schema,
+            *copied_schema,
         )
         self._schemas[table_name] = pgfield_table
         return pgfield_table
